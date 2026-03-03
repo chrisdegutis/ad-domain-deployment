@@ -7,7 +7,7 @@ This project demonstrates deploying an Active Directory Domain Services (AD DS) 
 <br><br>
 Both infrastructure setup and domain operations tasks are included, showcasing cloud-based system administration and directory service management that aligns with real-world IT environments.<br />
 
-<h1>What This Project Does (High-Level)</h1>h1>
+<h1>What This Project Does (High-Level)</h1>
 
 This lab simulates an organization’s core identity infrastructure in the cloud by:
 
