@@ -18,7 +18,7 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 5. Joining a client VM to the domain and verifying user authentication
 6. Enabling domain-based user login and Remote Desktop access for non-admins
 7. Using PowerShell to create multiple users and perform administrative tasks
-8. 
+
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
