@@ -3,7 +3,9 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This project demonstrates deploying an Active Directory Domain Services (AD DS) environment inside Microsoft Azure Virtual Machines to simulate a real enterprise identity infrastructure. It walks through provisioning Azure compute resources, configuring networking, installing AD DS, and joining a client VM to a domain.
+<br>
+Both infrastructure setup and domain operations tasks are included, showcasing cloud-based system administration and directory service management that aligns with real-world IT environments.<br />
 
 
 <h2>Video Demonstration</h2>
