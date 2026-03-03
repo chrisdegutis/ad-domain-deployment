@@ -7,7 +7,18 @@ This project demonstrates deploying an Active Directory Domain Services (AD DS) 
 <br><br>
 Both infrastructure setup and domain operations tasks are included, showcasing cloud-based system administration and directory service management that aligns with real-world IT environments.<br />
 
+<h1>What This Project Does (High-Level)</h1>h1>
 
+This lab simulates an organization’s core identity infrastructure in the cloud by:
+
+1. Creating Azure VMs for a Domain Controller and a client machine
+2. Installing and promoting the server VM to a Domain Controller
+3. Configuring static networking and DNS resolution across VMs
+4. Creating AD Organizational Units, users, groups, and domain accounts
+5. Joining a client VM to the domain and verifying user authentication
+6. Enabling domain-based user login and Remote Desktop access for non-admins
+7. Using PowerShell to create multiple users and perform administrative tasks
+8. 
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
