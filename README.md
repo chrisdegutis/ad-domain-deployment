@@ -111,7 +111,7 @@ Using <b>Remote Desktop</b>, RDP into <b>client-1</b> using its <b>public IP add
 <br><br>
 If the ping replies successfully, network connectivity between <b>client-1</b> and <b>dc-1</b> is working as expected.
 </p>
-<img width="800" height="1045" alt="image" src="https://github.com/user-attachments/assets/477788cb-eb76-496d-afdf-e7ce76304569" />
+<img width="800" height="788" alt="image" src="https://github.com/user-attachments/assets/9927c0a2-46a8-482a-b5dd-a791ae54b0e6" />
 <hr><br>
 
 <b>Step 10</b>
