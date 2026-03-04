@@ -55,9 +55,8 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 <hr><br>
 
 <b>Step 3</b>
-<p>Create the Domain Controller virtual machine (VM) using Windows Server 2025 Datacenter. Set the computer name to <b>dc-1</b> and place the virtual machine in the <b>Active-Directory-Lab</b> Resource Group. This virtual machine will host Active Directory Domain Services (AD DS) and will manage authentication, users, and resources within the domain. When configuring the virtual machine, create an Administrator account with a username and password that will be used to log into the system via Remote Desktop.</p>
+<p>Create the Domain Controller virtual machine (VM) using Windows Server 2025 Datacenter. Set the computer name to <b>dc-1</b> and place the virtual machine in the <b>Active-Directory-Lab</b> Resource Group. This virtual machine will host Active Directory Domain Services (AD DS) and will manage authentication, users, and resources within the domain. When configuring the virtual machine, create an Administrator account with a username and password that will be used to log into the system via Remote Desktop. Ensure the virtual machine is connected to the <b>Active-Directory-VNet</b> Virtual Network created earlier so it can communicate with other machines in the environment. Then Review & Create.</p>
 <img width="800" height="1861" alt="image" src="https://github.com/user-attachments/assets/980ddf0d-477d-4d7b-b4c6-5992e875c13b" />
-<p>Ensure the virtual machine is connected to the <b>Active-Directory-VNet</b> Virtual Network created earlier so it can communicate with other machines in the environment.</p>
 <img width="800" height="1847" alt="image" src="https://github.com/user-attachments/assets/f2e47d83-68fb-4e5c-bf7c-0bbbbec26bd8" />
 <hr><br>
 
