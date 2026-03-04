@@ -26,9 +26,10 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
+- Remote Desktop Protocol (RDP)
+- Active Directory Domain Services (AD DS)
 - PowerShell
+- Networking/DNS
 
 <h2>Operating Systems Used </h2>
 
@@ -37,10 +38,16 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+1. Create Resource Group
+2. Create Virtual Network
+3. Deploy Domain Controller
+4. Configure static IP
+5. Disable firewall
+6. Deploy client VM
+7. Configure DNS
+8. Restart client
+9. Test connectivity
+10. Verify DNS
 
 <h2>Deployment and Configuration Steps</h2>
 
