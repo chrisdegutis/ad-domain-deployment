@@ -45,7 +45,7 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1246" height="930" alt="Screenshot 2026-03-04 at 11 01 56 AM" src="https://github.com/user-attachments/assets/12a4daed-cd64-4db5-a5d4-f8d7720ffeac" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
