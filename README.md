@@ -57,7 +57,9 @@ Ensure the region is the same for resource group, virtual network, and virtual m
 <hr><br>
 
 <b>Step 3</b>
-<p>Next, create the Domain Controller virtual machine (VM) using Windows Server 2025 Datacenter. Set the computer name to <b>dc-1</b> and place the virtual machine in the <b>Active-Directory-Lab</b> Resource Group. This virtual machine will host Active Directory Domain Services (AD DS) and will manage authentication, users, and resources within the domain. When configuring the virtual machine, create an Administrator account with a username and password that will be used to log into the system via Remote Desktop. Click Next to Networking and ensure the virtual machine is connected to the <b>Active-Directory-VNet</b> Virtual Network created earlier so it can communicate with other machines in the environment. Then click Review & Create.</p>
+<p>Next, create the Domain Controller virtual machine (VM) using Windows Server 2025 Datacenter. Set the computer name to <b>dc-1</b>, region to <b>East US 2</b> and place the virtual machine in the <b>Active-Directory-Lab</b> Resource Group. This virtual machine will host Active Directory Domain Services (AD DS) and will manage authentication, users, and resources within the domain. 
+<br><br>
+When configuring the virtual machine, create an Administrator account with a username and password that will be used to log into the system via Remote Desktop. Click Next to Networking and ensure the virtual machine is connected to the <b>Active-Directory-VNet</b> Virtual Network created earlier so it can communicate with other machines in the environment. Then click Review & Create.</p>
 <img width="800" height="1861" alt="image" src="https://github.com/user-attachments/assets/980ddf0d-477d-4d7b-b4c6-5992e875c13b" />
 <img width="800" height="1847" alt="image" src="https://github.com/user-attachments/assets/f2e47d83-68fb-4e5c-bf7c-0bbbbec26bd8" />
 <hr><br>
