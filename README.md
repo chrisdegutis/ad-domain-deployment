@@ -7,19 +7,6 @@ This project demonstrates deploying and managing an Active Directory Domain Serv
 <br><br>
 It also covers core Active Directory administration tasks, including user and organizational unit management, Group Policy configuration, account lockout policies, and password resets.<br />
 
-<h2>What This Project Does</h2>
-
-This lab simulates an organization’s core identity infrastructure in the cloud by:
-
-- Provisioning Azure infrastructure including a Resource Group, Virtual Network, and Virtual Machines
-- Deploying a Windows Server VM and promoting it to a Domain Controller using Active Directory Domain Services (AD DS)
-- Configuring static networking and DNS so client machines use the Domain Controller for name resolution
-- Creating Active Directory Organizational Units (OUs), users, groups, and administrative accounts
-- Joining a Windows client machine to the domain and verifying domain authentication
-- Enabling Remote Desktop access for domain users on the client machine
-- Using PowerShell to automate the creation of multiple Active Directory user accounts
-- Configuring account lockout policies and performing account management tasks such as unlocking accounts, resetting passwords, and enabling or disabling users
-
 <h2>Video Demonstration</h2>
 
 - ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
@@ -38,17 +25,16 @@ This lab simulates an organization’s core identity infrastructure in the cloud
 - Windows 10 (21H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
+This lab simulates an organization’s core identity infrastructure in the cloud by:
 
-1. Create Resource Group
-2. Create Virtual Network
-3. Deploy Domain Controller
-4. Configure static IP
-5. Disable firewall
-6. Deploy client VM
-7. Configure DNS
-8. Restart client
-9. Test connectivity
-10. Verify DNS
+- Provisioning Azure infrastructure including a Resource Group, Virtual Network, and Virtual Machines
+- Deploying a Windows Server VM and promoting it to a Domain Controller using Active Directory Domain Services (AD DS)
+- Configuring static networking and DNS so client machines use the Domain Controller for name resolution
+- Creating Active Directory Organizational Units (OUs), users, groups, and administrative accounts
+- Joining a Windows client machine to the domain and verifying domain authentication
+- Enabling Remote Desktop access for domain users on the client machine
+- Using PowerShell to automate the creation of multiple Active Directory user accounts
+- Configuring account lockout policies and performing account management tasks such as unlocking accounts, resetting passwords, and enabling or disabling users
 
 <h2>Deployment and Configuration Steps</h2>
 
