@@ -42,12 +42,12 @@ It also covers core Active Directory administration tasks, including user and or
 <h3>Step 1</h3>
 <p>Begin by creating a <b>Resource Group</b>, which will act as a logical container for all Azure resources used in this lab, including the Virtual Network, Domain Controller, and Virtual Machines. 
 <br><br>
-Ensure the region is the same for resource group, virtual network, and virtual machines. In this lab, we will be using <b>East US 2</b>.</p>
+Ensure the region is the same for resource group, virtual network, and virtual machines. In this lab, we will name the resource group <b>Active-Directory-Lab</b>and the region <b>East US 2</b>.</p>
 <img width="800" height="1875" alt="image" src="https://github.com/user-attachments/assets/2e23386a-6936-4577-8c7b-f011c01c52e1" />
 <hr><br>
 
 <h3>Step 2</h3>
-<p>Create a <b>Virtual Network (VNet)</b> to enable network communication between the virtual machines and other resources in this environment. The VNet should be placed in the <b>Resource Group created above</b>. For this lab, the VNet will be deployed in the <b>East US 2</b> region. Ensure that all virtual machines and related resources are deployed in the <b>same region</b> to allow proper connectivity.</p>
+<p>Create a <b>Virtual Network (VNet)</b> to enable network communication between the virtual machines and other resources in this environment. The VNet should be placed in the <b>Resource Group created above (Active-Directory-Lab)</b>. For this lab, the VNet will be deployed in the <b>East US 2</b> region. Ensure that all virtual machines and related resources are deployed in the same region <b>East US 2</b> to allow proper connectivity.</p>
 <img width="800" height="1842" alt="image" src="https://github.com/user-attachments/assets/6aeb214f-0e05-49cb-89e5-eea66ee46860" />
 <hr><br>
 
