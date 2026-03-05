@@ -47,7 +47,7 @@ Ensure the region is the same for resource group, virtual network, and virtual m
 <hr><br>
 
 <h3>Step 2</h3>
-<p>Create a Virtual Network (VNet) to enable network communication between the virtual machines and other resources in this environment. The VNet should be placed in the Resource Group created above. For this lab, the VNet will be deployed in the East US 2 region. Ensure that all virtual machines and related resources are deployed in the same region to allow proper connectivity.</p>
+<p>Create a <b>Virtual Network (VNet)</b> to enable network communication between the virtual machines and other resources in this environment. The VNet should be placed in the <b>Resource Group created above</b>. For this lab, the VNet will be deployed in the <b>East US 2</b> region. Ensure that all virtual machines and related resources are deployed in the <b>same region</b> to allow proper connectivity.</p>
 <img width="800" height="1842" alt="image" src="https://github.com/user-attachments/assets/6aeb214f-0e05-49cb-89e5-eea66ee46860" />
 <hr><br>
 
