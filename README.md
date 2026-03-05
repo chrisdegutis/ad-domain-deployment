@@ -25,6 +25,7 @@ It also covers core Active Directory administration tasks, including user and or
 - Windows 10 (21H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
+<br>
 This lab simulates an organization’s core identity infrastructure in the cloud by:
 
 - Provisioning Azure infrastructure including a Resource Group, Virtual Network, and Virtual Machines
