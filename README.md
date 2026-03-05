@@ -42,7 +42,7 @@ It also covers core Active Directory administration tasks, including user and or
 <h3>Step 1</h3>
 <p>Begin by creating a <b>Resource Group</b>, which will act as a logical container for all Azure resources used in this lab, including the Virtual Network, Domain Controller, and Virtual Machines. 
 <br><br>
-Ensure the region is the same for resource group, virtual network, and virtual machines. In this lab, we will name the resource group <b>Active-Directory-Lab</b>and the region <b>East US 2</b>.</p>
+Ensure the region is the same for resource group, virtual network, and virtual machines. In this lab, we will name the resource group <b>Active-Directory-Lab</b> and the region <b>East US 2</b>.</p>
 <img width="800" height="1875" alt="image" src="https://github.com/user-attachments/assets/2e23386a-6936-4577-8c7b-f011c01c52e1" />
 <hr><br>
 
