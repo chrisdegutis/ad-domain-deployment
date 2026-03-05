@@ -7,9 +7,10 @@ This project demonstrates deploying and managing an Active Directory Domain Serv
 <br><br>
 It also covers core Active Directory administration tasks, including user and organizational unit management, Group Policy configuration, account lockout policies, and password resets.<br />
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+<!--- <h2>Video Demonstration</h2>
+
+- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com) -->
 
 <h2>Environments and Technologies Used</h2>
 
