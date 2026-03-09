@@ -201,7 +201,7 @@ After entering the domain administrator credentials, you will see a message stat
 <p>
 Next, log back into the <b>Domain Controller (DC-1)</b> and open <b>Active Directory Users and Computers (ADUC)</b>. Verify that <b>Client-1</b> appears in the domain computers list.
 </p>
-<img width="800" height="2006" alt="image" src="https://github.com/user-attachments/assets/44192bdb-c6a0-4ad0-8b12-c17c0b1e7c23" />
+<img width="800" height="1596" alt="image" src="https://github.com/user-attachments/assets/04717e82-9b32-4990-a8d4-f76d4735b8ca" />
 <hr>
 
 
