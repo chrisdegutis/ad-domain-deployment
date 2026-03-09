@@ -216,4 +216,17 @@ Create a new <b>Organizational Unit (OU)</b> named <b>_CLIENTS</b>.
 <img width="800" height="1276" alt="image" src="https://github.com/user-attachments/assets/ec841bd7-94dc-4f31-8374-bde3be4e4c47" />
 <p>Once created, locate <b>Client-1</b> in the Computers folder and drag it into the <b>_CLIENTS</b> OU to keep client machines organized within the directory.</p>
 <img width="800" height="1064" alt="image" src="https://github.com/user-attachments/assets/4fdf7d24-3e87-47ae-b14e-edb1f328aea1" />
+<hr>
 
+<h3>Step 16: Configure Remote Desktop Access for Domain Users</h3>
+<p>
+Log into <b>Client-1</b> using the domain administrator account <b>mydomain.com\jane_admin</b>.
+</p>
+<p>
+Open <b>System Properties</b> by clicking <b>Start > Settings > System > Remote Desktop </b>. Click <b>Select users that can remotely access this PC</b> then click <b>Add</b> and type in <b>Domain Users</b> then click <b>Check Names > OK</b> and <b>OK</b> again.
+</p>
+<p>
+Once configured, non-administrative domain users will be able to log into <b>Client-1</b> using <b>Remote Desktop</b>.
+</p>
+<img width="800" height="1890" alt="image" src="https://github.com/user-attachments/assets/2a13fabe-56b1-4fd7-897e-3efd1271470e" />
+<hr>
