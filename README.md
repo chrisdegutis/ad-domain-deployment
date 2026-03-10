@@ -264,8 +264,16 @@ Open <b>PowerShell ISE</b> as an administrator. Create a new script file and sav
 Click <b>Run</b> to run the script to automatically create 1000 user accounts in the <b>_EMPLOYEES</b> organizational unit (OU) in <b>Active Directory</b> .
 </p>
 <img width="800" height="1946" alt="image" src="https://github.com/user-attachments/assets/87f05d6c-e5fb-40ac-85c3-6cb3855cf710" />
+<hr>
+
+
+<h3>Step 18: Verify User Accounts in Active Directory</h3>
 <p>
-Open <b>Active Directory Users and Computers</b> and verify the new user accounts created in the <b>_EMPLOYEES</b> OU.
+Open <b>Active Directory Users and Computers (ADUC)</b> on <b>DC-1</b>.
 </p>
-<p>Double-click any user and go to the <b>Account</b> tab. Note the <b>User logon name</b>. (I will be using <b>mydomain.com\ascott</b> for the lab.)</p>
+<p>
+Navigate to the <b>_EMPLOYEES</b> Organizational Unit and confirm that the new user accounts created by the PowerShell script appear in the directory.
+</p>
+<p>Click on any user, <b>right-click > Properties</b> and go to the <b>Account</b> tab. Note the <b>User logon name</b>. (I will be using <b>mydomain.com\ascott</b> and password <b>Password1</b> for the lab.)</p>
 <img width="800" height="2000" alt="image" src="https://github.com/user-attachments/assets/e6995f89-6b1a-4c91-9bee-9df703a2095f" />
+<hr>
