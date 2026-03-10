@@ -41,6 +41,8 @@ It also covers foundational <b>Active Directory</b> administration tasks such as
 - Using PowerShell to automate the creation of multiple Active Directory user accounts
 - Configuring account lockout policies and performing account management tasks such as unlocking accounts, resetting passwords, and enabling or disabling users</p>
 
+<hr>
+
 <h2>Deployment and Configuration Steps</h2>
 
 <h3>Step 1: Create a Resource Group</h3>
