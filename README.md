@@ -223,7 +223,10 @@ Create a new <b>Organizational Unit (OU)</b> named <b>_CLIENTS</b>.
 Log into <b>DC-1</b> using the domain administrator account <b>mydomain.com\jane_admin</b>. Open <b>Group Policy Management</b> from the <b>Tools</b> menu in <b>Server Manager</b>.
 </p>
 <p>
-Right-click the <b>_CLIENTS</b> Organizational Unit and select <b>Create a GPO in this domain, and Link it here</b>. Name the policy <b>Allow Remote Desktop</b>.
+Right-click the <b>_CLIENTS</b> Organizational Unit and select <b>Create a GPO in this domain, and Link it here</b>.
+</p>
+<p>
+Name the policy <b>Allow Remote Desktop</b>.
 </p>
 <img width="800" height="1226" alt="image" src="https://github.com/user-attachments/assets/19137cc2-aa09-41b7-8aa2-ada680d7e465" />
 <p>
