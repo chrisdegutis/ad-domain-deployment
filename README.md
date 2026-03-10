@@ -267,5 +267,5 @@ Click <b>Run</b> to run the script to automatically create 1000 user accounts in
 <p>
 Open <b>Active Directory Users and Computers</b> and verify the new user accounts created in the <b>_EMPLOYEES</b> OU.
 </p>
-<p>Double-click any user and go to the <b>Account</b> tab. Note the <b>User logon name</b>. (I will be using <b>ascott@mydomain.com</b> for the lab.)</p>
+<p>Double-click any user and go to the <b>Account</b> tab. Note the <b>User logon name</b>. (I will be using <b>mydomain.com\ascott</b> for the lab.)</p>
 <img width="800" height="2000" alt="image" src="https://github.com/user-attachments/assets/e6995f89-6b1a-4c91-9bee-9df703a2095f" />
