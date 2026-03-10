@@ -257,7 +257,7 @@ Log into <b>DC-1</b> using the domain administrator account <b>mydomain.com\jane
 </p>
 
 <p>
-Open <b>PowerShell ISE</b> as an administrator. Create a new script file and paste the contents of the user creation script (<a href="https://youtube.com">found here</a>) into the editor.
+Open <b>PowerShell ISE</b> as an administrator. Create a new script file and paste the contents of the user creation script (<a href="https://github.com/chrisdegutis/ad-user-creation-script/blob/main/create-ad-users.ps1">found here</a>) into the editor.
 </p>
 
 <p>
