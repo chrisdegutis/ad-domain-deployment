@@ -304,4 +304,3 @@ If we open the properties for <b>Adam Scott (ascott)</b> in <b>Active Directory 
 <p>
 In <b>Step 16</b>, we created a <b>Group Policy Object (GPO)</b> that allows members of the <b>Domain Users</b> group to access <b>Client-1</b> using <b>Remote Desktop</b>. Because <b>Adam Scott (ascott)</b> is part of this group, the user is able to successfully log in to the machine.
 </p>
-<hr>
