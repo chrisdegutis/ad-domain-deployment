@@ -277,3 +277,27 @@ Navigate to the <b>_EMPLOYEES</b> Organizational Unit and confirm that the new u
 <p>Click on any user, <b>right-click > Properties</b> and go to the <b>Account</b> tab. Note the <b>User logon name</b>. (I will be using <b>mydomain.com\ascott</b> and password <b>Password1</b> for the lab.)</p>
 <img width="800" height="2000" alt="image" src="https://github.com/user-attachments/assets/e6995f89-6b1a-4c91-9bee-9df703a2095f" />
 <hr>
+
+<h3>Step 19: Test Domain User Login</h3>
+<p>
+From your local machine, open <b>Remote Desktop Connection</b> and connect to <b>Client-1</b> using its public IP address.
+</p>
+<p>
+When prompted to sign in, enter the following domain credentials:
+</p>
+<p>
+<b>Username:</b> mydomain.com\ascott<br>
+<b>Password:</b> password1
+</p>
+<img width="800" height="1354" alt="image" src="https://github.com/user-attachments/assets/296e0b3c-96a7-488d-b28a-81c9d675c4e9" />
+<p>
+If the login is successful, this confirms that the user account was created correctly in <b>Active Directory</b> and that <b>Client-1</b> is properly authenticating domain users.
+</p>
+<p>
+If we open the properties for <b>Adam Scott (ascott)</b> in <b>Active Directory Users and Computers</b> and navigate to the <b>Member Of</b> tab, we can see that the account is a member of the <b>Domain Users</b> group.
+</p>
+<img width="800" height="1594" alt="image" src="https://github.com/user-attachments/assets/a20cc9da-21d0-4cd4-ae89-58c6ee3ae5ca" />
+<p>
+In <b>Step 16</b>, we created a <b>Group Policy</b> that allows members of the <b>Domain Users</b> group to access <b>Client-1</b> using <b>Remote Desktop</b>. Because <b>Adam Scott (ascott)</b> is part of this group, the user is able to successfully log in to the machine.
+</p>
+<hr>
