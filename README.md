@@ -229,4 +229,29 @@ Open <b>System Properties</b> by clicking <b>Start > Settings > System > Remote 
 Once configured, non-administrative domain users will be able to log into <b>Client-1</b> using <b>Remote Desktop</b>.
 </p>
 <img width="800" height="1890" alt="image" src="https://github.com/user-attachments/assets/2a13fabe-56b1-4fd7-897e-3efd1271470e" />
+
+<b>OPTIONAL - Enterprise Method (Recommended): Configure Using Group Policy</b>
+</p>
+<p>
+In production environments, this setting is typically managed through <b>Group Policy</b> so it can be applied to many computers at once.
+</p>
+<ul>
+<li>Log into <b>DC-1</b> as <b>mydomain.com\jane_admin</b></li>
+<li>Open <b>Group Policy Management</b> from the <b>Tools</b> menu in Server Manager</li>
+<li>Right-click the <b>_CLIENTS</b> Organizational Unit and select <b>Create a GPO in this domain, and Link it here</b></li>
+<li>Name the policy <b>Allow Remote Desktop</b></li>
+<li>Edit the new GPO and navigate to:<br>
+<b>Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → User Rights Assignment</b></li>
+<li>Open <b>Allow log on through Remote Desktop Services</b></li>
+<li>Add the group <b>Domain Users</b></li>
+</ul>
+<img width="800" height="2006" alt="image" src="https://github.com/user-attachments/assets/8dcc5aa0-7c8e-42d3-b167-fc826538b721" />
+<p>
+After the policy is applied, update group policy on <b>Client-1</b> by running the following command in PowerShell:
+</p>
+<pre><code>gpupdate /force</code></pre>
+<p>
+Domain users will now be able to connect to <b>Client-1</b> using Remote Desktop.
+</p>
+<img width="800" height="1240" alt="image" src="https://github.com/user-attachments/assets/5e11dcf7-648f-4d53-83a3-3249f58b1038" />
 <hr>
