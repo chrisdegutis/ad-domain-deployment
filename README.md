@@ -218,40 +218,29 @@ Create a new <b>Organizational Unit (OU)</b> named <b>_CLIENTS</b>.
 <img width="800" height="1064" alt="image" src="https://github.com/user-attachments/assets/4fdf7d24-3e87-47ae-b14e-edb1f328aea1" />
 <hr>
 
-<h3>Step 16: Configure Remote Desktop Access for Domain Users</h3>
+<h3>Step 16: Configure Remote Desktop Access Using Group Policy</h3>
 <p>
-Log into <b>Client-1</b> using the domain administrator account <b>mydomain.com\jane_admin</b>.
+Log into <b>DC-1</b> using the domain administrator account <b>mydomain.com\jane_admin</b>. Open <b>Group Policy Management</b> from the <b>Tools</b> menu in <b>Server Manager</b>.
 </p>
 <p>
-Open <b>System Properties</b> by clicking <b>Start > Settings > System > Remote Desktop </b>. Click <b>Select users that can remotely access this PC</b> then click <b>Add</b> and type in <b>Domain Users</b> then click <b>Check Names > OK</b> and <b>OK</b> again.
+Right-click the <b>_CLIENTS</b> Organizational Unit and select <b>Create a GPO in this domain, and Link it here</b>. Name the policy <b>Allow Remote Desktop</b>.
 </p>
 <p>
-Once configured, non-administrative domain users will be able to log into <b>Client-1</b> using <b>Remote Desktop</b>.
-</p>
-<img width="800" height="1890" alt="image" src="https://github.com/user-attachments/assets/2a13fabe-56b1-4fd7-897e-3efd1271470e" />
-
-<b>OPTIONAL - Enterprise Method (Recommended): Configure Using Group Policy</b>
+Edit the newly created policy and navigate to:
 </p>
 <p>
-In production environments, this setting is typically managed through <b>Group Policy</b> so it can be applied to many computers at once.
+<b>Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → User Rights Assignment</b>
 </p>
-<ul>
-<li>Log into <b>DC-1</b> as <b>mydomain.com\jane_admin</b></li>
-<li>Open <b>Group Policy Management</b> from the <b>Tools</b> menu in Server Manager</li>
-<li>Right-click the <b>_CLIENTS</b> Organizational Unit and select <b>Create a GPO in this domain, and Link it here</b></li>
-<li>Name the policy <b>Allow Remote Desktop</b></li>
-<li>Edit the new GPO and navigate to:<br>
-<b>Computer Configuration → Policies → Windows Settings → Security Settings → Local Policies → User Rights Assignment</b></li>
-<li>Open <b>Allow log on through Remote Desktop Services</b></li>
-<li>Add the group <b>Domain Users</b></li>
-</ul>
-<img width="800" height="2006" alt="image" src="https://github.com/user-attachments/assets/8dcc5aa0-7c8e-42d3-b167-fc826538b721" />
 <p>
-After the policy is applied, update group policy on <b>Client-1</b> by running the following command in PowerShell:
+Open <b>Allow log on through Remote Desktop Services</b> and add the group <b>Domain Users</b>. This allows non-administrative domain users to log into client machines using Remote Desktop.
+</p>
+<img width="800" height="2006" alt="image" src="https://github.com/user-attachments/assets/9d7ecdf5-f06b-4388-beff-097a9f0444d2" />
+<p>
+After creating the policy, update the policy on <b>Client-1</b> by running the following command in PowerShell:
 </p>
 <pre><code>gpupdate /force</code></pre>
 <p>
-Domain users will now be able to connect to <b>Client-1</b> using Remote Desktop.
+Once the policy updates, domain users will be able to connect to <b>Client-1</b> using <b>Remote Desktop</b>.
 </p>
-<img width="800" height="1240" alt="image" src="https://github.com/user-attachments/assets/5e11dcf7-648f-4d53-83a3-3249f58b1038" />
+<img width="800" height="1240" alt="image" src="https://github.com/user-attachments/assets/80fb1eb4-58f3-4980-9bc6-38a0b23e7839" />
 <hr>
