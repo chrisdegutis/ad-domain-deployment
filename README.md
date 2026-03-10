@@ -296,11 +296,12 @@ When prompted to sign in, enter the following domain credentials:
 <p>
 If the login is successful, this confirms that the user account was created correctly in <b>Active Directory</b> and that <b>Client-1</b> is properly authenticating domain users.
 </p>
+<img width="800" height="2100" alt="image" src="https://github.com/user-attachments/assets/385ee7f4-8e72-43fd-89bb-ac674d83ba4f" />
 <p>
 If we open the properties for <b>Adam Scott (ascott)</b> in <b>Active Directory Users and Computers</b> and navigate to the <b>Member Of</b> tab, we can see that the account is a member of the <b>Domain Users</b> group.
 </p>
 <img width="800" height="1594" alt="image" src="https://github.com/user-attachments/assets/a20cc9da-21d0-4cd4-ae89-58c6ee3ae5ca" />
 <p>
-In <b>Step 16</b>, we created a <b>Group Policy</b> that allows members of the <b>Domain Users</b> group to access <b>Client-1</b> using <b>Remote Desktop</b>. Because <b>Adam Scott (ascott)</b> is part of this group, the user is able to successfully log in to the machine.
+In <b>Step 16</b>, we created a <b>Group Policy Object (GPO)</b> that allows members of the <b>Domain Users</b> group to access <b>Client-1</b> using <b>Remote Desktop</b>. Because <b>Adam Scott (ascott)</b> is part of this group, the user is able to successfully log in to the machine.
 </p>
 <hr>
