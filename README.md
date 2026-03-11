@@ -18,29 +18,38 @@ It also covers foundational <b>Active Directory</b> administration tasks such as
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop Protocol (RDP)
-- Active Directory Domain Services (AD DS)
-- PowerShell
-- Networking/DNS
+<ul>
+<li>Microsoft Azure (<b>Resource Groups</b>, <b>Virtual Networks</b>, <b>Virtual Machines</b>, and <b>Network Interface / DNS configuration</b>)</li>
+<li>Active Directory Domain Services (<b>AD DS</b>)</li>
+<li>Group Policy Management</li>
+<li>Active Directory Users and Computers (<b>ADUC</b>)</li>
+<li>Remote Desktop Protocol (<b>RDP</b>)</li>
+<li>PowerShell</li>
+<li>Windows Server Manager</li>
+<li>DNS and basic network connectivity troubleshooting</li>
+</ul>
 
-<h2>Operating Systems Used </h2>
-
-- Windows Server 2025 Datacenter
-- Windows 10 Enterprise (21H2)
+<h2>Operating Systems Used</h2>
+<ul>
+<li><b>Windows Server 2025 Datacenter</b> – deployed on the <b>DC-1</b> virtual machine and used to install and configure <b>Active Directory Domain Services (AD DS)</b>, DNS, and Group Policy management tools.</li>
+<li><b>Windows 10 Enterprise</b> – deployed on the <b>Client-1</b> virtual machine and joined to the Active Directory domain to simulate a domain-connected workstation used for authentication testing and policy enforcement.</li>
+</ul>
 
 <h2>High-Level Deployment and Configuration Steps</h2>
-<p><b>This lab simulates an organization’s core identity infrastructure in the cloud by:</b>
-
-- Provisioning Azure infrastructure including a Resource Group, Virtual Network, and Virtual Machines
-- Deploying a Windows Server VM and promoting it to a Domain Controller using Active Directory Domain Services (AD DS)
-- Configuring static networking and DNS so client machines use the Domain Controller for name resolution
-- Creating Active Directory Organizational Units (OUs), users, groups, and administrative accounts
-- Joining a Windows client machine to the domain and verifying domain authentication
-- Enabling Remote Desktop access for domain users on the client machine
-- Using PowerShell to automate the creation of multiple Active Directory user accounts
-- Configuring account lockout policies and performing account management tasks such as unlocking accounts, resetting passwords, and enabling or disabling users</p>
-
+<p>
+This lab demonstrates how to deploy and validate a basic enterprise <b>Active Directory</b> environment in <b>Microsoft Azure</b> by performing the following tasks:
+</p>
+<ul>
+<li>Provisioning core Azure infrastructure, including a <b>Resource Group</b>, <b>Virtual Network</b>, and two <b>Virtual Machines</b></li>
+<li>Deploying a Windows Server virtual machine to function as the <b>Domain Controller</b> and assigning it a <b>static private IP address</b></li>
+<li>Deploying a Windows client virtual machine and configuring its <b>DNS settings</b> to use the Domain Controller for name resolution</li>
+<li>Testing network connectivity and verifying DNS configuration between the client machine and the Domain Controller</li>
+<li>Installing <b>Active Directory Domain Services (AD DS)</b> and promoting the server to a <b>Domain Controller</b> by creating a new forest and domain</li>
+<li>Creating and organizing <b>Organizational Units (OUs)</b>, administrative accounts, client containers, and standard user accounts within Active Directory</li>
+<li>Joining the client virtual machine to the domain and verifying that it appears in <b>Active Directory Users and Computers</b></li>
+<li>Configuring <b>Group Policy</b> to allow domain users to access the client machine through <b>Remote Desktop</b></li>
+<li>Using <b>PowerShell</b> to automate bulk user creation and validating domain authentication by signing into the client machine with a domain account</li>
+</ul>
 
 
 <h2>Deployment and Configuration Steps</h2>
@@ -303,4 +312,20 @@ If we open the properties for <b>Adam Scott (ascott)</b> in <b>Active Directory 
 <img width="800" height="1594" alt="image" src="https://github.com/user-attachments/assets/a20cc9da-21d0-4cd4-ae89-58c6ee3ae5ca" />
 <p>
 In <b>Step 16</b>, we created a <b>Group Policy Object (GPO)</b> that allows members of the <b>Domain Users</b> group to access <b>Client-1</b> using <b>Remote Desktop</b>. Because <b>Adam Scott (ascott)</b> is part of this group, the user is able to successfully log in to the machine.
+</p>
+<hr>
+
+
+<h2>Conclusion</h2>
+<p>
+In this lab, a fully functional <b>Active Directory domain environment</b> was successfully deployed and configured within <b>Microsoft Azure</b>. A Windows Server virtual machine was promoted to a <b>Domain Controller</b>, providing centralized authentication and directory services for the network.
+</p>
+<p>
+A Windows client machine was then joined to the domain, demonstrating how enterprise workstations authenticate against Active Directory. Organizational Units were created to organize domain resources, administrative accounts were configured, and domain users were generated using <b>PowerShell automation</b>.
+</p>
+<p>
+Additional configuration included implementing <b>Group Policy</b> to allow domain users to access client machines through <b>Remote Desktop</b>, verifying domain authentication, and testing connectivity between the Domain Controller and client systems.
+</p>
+<p>
+This project demonstrates practical experience with <b>Active Directory administration</b>, <b>Azure infrastructure deployment</b>, <b>Group Policy configuration</b>, and <b>PowerShell automation</b>, all of which are foundational skills commonly required in enterprise IT environments.
 </p>
